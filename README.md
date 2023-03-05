@@ -59,3 +59,8 @@ Cowrie logs all SSH connections to your honeypot, along with the commands that a
 You can monitor these logs to see if any SSH brute force attacks are being attempted on your server.
 
 Note: Keep in mind that setting up a honeypot is not a foolproof solution and it's still important to implement security measures on your server to prevent attacks. Additionally, setting up a honeypot can potentially attract attackers to your server, so it's important to weigh the potential risks before implementing this solution.
+
+if you dont have Digitalocean account use below link to create new onw and get 100$ free credit.
+https://m.do.co/c/8f7b157b0fa2
+
+<a href="https://www.digitalocean.com/?refcode=8f7b157b0fa2&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge"><img src="https://web-platforms.sfo2.cdn.digitaloceanspaces.com/WWW/Badge%201.svg" alt="DigitalOcean Referral Badge" /></a>
