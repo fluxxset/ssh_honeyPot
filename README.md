@@ -27,6 +27,35 @@
 # Setting Up HoneyPot
 
 
+-     Install the honeypot software
 
+The honeypot software we'll use is called Cowrie. You can install it on your Linux server by running the following command:
 
+`sudo apt-get update
+sudo apt-get install cowrie`
 
+-     Configure Cowrie
+
+Once you've installed Cowrie, you'll need to configure it. The configuration file is located at /etc/cowrie/cowrie.cfg.
+
+You can use the default configuration file, or you can customize it to your needs. Some things you might want to change include:
+
+    The SSH port that Cowrie listens on (by default, it listens on port 2222)
+    The log file locations
+    The user and group that Cowrie runs as
+    
+-     Start Cowrie
+
+To start Cowrie, run the following command:
+`sudo service cowrie start`
+
+-     Monitor Cowrie logs
+
+Cowrie logs all SSH connections to your honeypot, along with the commands that are run. You can find the logs in the following locations:
+
+    /var/log/cowrie/cowrie.log: This is the main log file, which logs all SSH connections and commands.
+    /var/log/cowrie/tty/: This directory contains logs of each SSH session that connects to your honeypot.
+
+You can monitor these logs to see if any SSH brute force attacks are being attempted on your server.
+
+Note: Keep in mind that setting up a honeypot is not a foolproof solution and it's still important to implement security measures on your server to prevent attacks. Additionally, setting up a honeypot can potentially attract attackers to your server, so it's important to weigh the potential risks before implementing this solution.
