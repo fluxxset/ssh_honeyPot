@@ -1,5 +1,15 @@
 # Changing ssh Port 
-ant to change include:
+
+- chage ssh port in file ( add any other than 22 )
+ `sudo nano /etc/ssh/sshd_config`
+- Update firewall rules for new port 
+ `sudo ufw allow 1234/tcp`  or `sudo ufw allow OpenSSH`
+- To apply the changes, restart the SSH service
+ `To apply the changes, restart the SSH service`
+- exit and login from new port 
+ `ssh root@1.2.3.4 -p 1234`
+ 
+
 
 
 if you dont have Digitalocean account use below link to create new onw and get 100$ free credit.
