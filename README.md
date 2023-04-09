@@ -9,7 +9,15 @@
 - exit and login from new port 
  `ssh root@1.2.3.4 -p 1234`
  
+ 
+ # Setting UP Honeypot
 
+- download honeypot script from github
+`curl https://raw.githubusercontent.com/fluxx03/ssh_honeyPot/main/honeypot.py -o honeypot.py`
+- running script 
+`python3  honeypot.py`
+to run in background 
+`nohup python3  honeypot.py >> out.txt &`
 
 
 if you dont have Digitalocean account use below link to create new onw and get 100$ free credit.
