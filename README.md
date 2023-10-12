@@ -13,7 +13,7 @@
  # Setting UP Honeypot
 
 - download honeypot script from github
-`curl https://raw.githubusercontent.com/fluxx03/ssh_honeyPot/main/honeypot.py -o honeypot.py`
+`curl https://raw.githubusercontent.com/fluxxset/ssh_honeyPot/main/honeypot.py -o honeypot.py`
 - running script 
 `python3  honeypot.py`
 to run in background 
